@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+.footer{
+  background-color: 0C0C0C;
+  color: FBFBFB;
+  border-radius: 30px;
+  padding: 40px 28px 28px 28px;
+}
+
+
+.footer-navlist-address{
+    border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+}
+
