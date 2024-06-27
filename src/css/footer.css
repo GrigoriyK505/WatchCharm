@@ -1,33 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-address {
-  font-style: inherit;
-}
 
 .container-footer {
   min-width: 320px;
@@ -78,7 +49,7 @@ address {
   height: 34px;
   background-color: #0C0C0C;
   border: 1px solid rgba(251, 251, 251, 0.1);
-  border-radius: 10%;
+  border-radius: 30%;
 
   justify-content: center;
   align-items: center;
