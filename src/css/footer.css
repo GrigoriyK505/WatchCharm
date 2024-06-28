@@ -1,8 +1,8 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 h1,
 h2,
@@ -34,6 +34,7 @@ address {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -101,27 +102,28 @@ address {
 }
 
 .footer-tel-box {
-  display: block;
-  justify-content: start;
-  width: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: fit-content;
   height: 44px;
   border-radius: 16px;
   margin-bottom: 40px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   padding: 14px 20px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
 }
 
 .footer-tel {
   display: block;
-  align-items: center;
-  
+  text-align: center;
   
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
   color: #fbfbfb;
-  width: 152px;
+
   height: 44px;
 }
 
@@ -181,7 +183,6 @@ address {
 .footer-maps-box {
   width: 83px;
   margin-left: auto;
-
 }
 
 .footer-maps {
@@ -202,6 +203,7 @@ address {
   flex-direction: column;
   gap: 8px;
   width: 187px;
+  box-sizing: border-box;
 }
 
 .footer-policy-list {
@@ -257,8 +259,8 @@ address {
   }
 
   .footer-tel-box{
-    width: 160px;
     height: 48px;
+    margin-bottom: 50px;
   }
 
   .footer-tel {
@@ -308,7 +310,7 @@ address {
   .footer-policy-box {
     display: flex;
     flex-direction: row;
-    width: 624px;
+    width: 100%;
     align-items: baseline;
   }
 
@@ -326,6 +328,7 @@ address {
   .footer-policy-link {
     font-size: 14px;
     line-height: 1.29;
+    margin-left: auto;
   }
 }
 
@@ -356,7 +359,7 @@ address {
   }
   
   .footer-policy-box {
-    width: 1136px;
+    width: 100%;
   }
 
 }
