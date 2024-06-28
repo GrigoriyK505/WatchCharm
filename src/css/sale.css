@@ -1,9 +1,12 @@
+.sale {
+	width: 100%;
+}
+
 .sale-container {
 	max-width: 375px;
 	padding: 0 20px;
 	margin: 0 auto;
 	width: 100%;
-	box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -30,7 +33,29 @@
 @media (min-width: 768px) {
 	.sale-title {
 		font-size: 48px;
-		line-height: 0.92;
+		line-height: 0.91667;
+		margin-bottom: 40px;
+	}
+}
+
+/* #region wrappers */
+
+.sale-main-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media (min-width: 768px) {
+	.sale-main-wrapper {
+		gap: 40px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.sale-main-wrapper {
+		flex-direction: row;
+		gap: 40px;
 	}
 }
 
@@ -46,10 +71,20 @@
 	}
 }
 
+/* #endregion */
+
+/* #region small images */
+
 .sale-list {
 	display: flex;
-	justify-content: space-between;
 	gap: 5px;
+}
+
+@media (min-width: 768px) {
+	.sale-list {
+		flex-direction: column;
+		gap: 10px;
+	}
 }
 
 .sale-item {
@@ -61,29 +96,173 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-sizing: border-box;
 }
 
-.sale-image {}
+@media (min-width: 768px) {
+	.sale-item {
+		border-radius: 20px;
+		width: 132px;
+		height: 132px;
+	}
 
-.sale-main-block {}
+	.sale-image {
+		width: 96px;
+		height: 100px;
+	}
+}
 
-.sale-main-image {}
+/* #endregion */
 
-.sale-description {}
+/* #region big image */
 
-.sale-description-title {}
+.sale-main-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 385px;
+	border: 1px solid rgba(12, 12, 12, 0.05);
+	border-radius: 30px;
+	background: #f3f3f3;
+}
 
-.sale-description-product-id {}
+@media (min-width: 768px) {
+	.sale-main-block {
+		height: 558px;
+		border-radius: 50px;
+		flex-grow: 1;
+	}
 
-.sale-description-prices {}
+	.sale-main-image {
+		width: 328px;
+		height: 398px;
+	}
+}
 
-.sale-description-price {}
+@media (min-width: 1280px) {
+	.sale-main-block {
+		width: 428px;
+	}
+}
 
-.sale-description-price-initial {}
+/* #endregion */
 
-.sale-description-text {}
+/* #region description */
 
-.sale-description-tags {}
+.sale-description {
+	border-radius: 30px;
+	background: #3350e9;
+	padding: 48px 28px;
+}
 
-.sale-description-tag {}
+@media (min-width: 768px) {
+	.sale-description {
+		border-radius: 50px;
+		padding: 60px;
+	}
+}
+
+.sale-description-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.16667;
+	color: #fbfbfb;
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+	.sale-description-title {
+		font-size: 32px;
+		line-height: 1.125;
+	}
+}
+
+.sale-description-product-id {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.28571;
+	color: rgba(251, 251, 251, 0.5);
+	margin-bottom: 20px;
+}
+
+.sale-description-prices {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	margin-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+	.sale-description-prices {
+		margin-bottom: 30px;
+	}
+}
+
+.sale-description-price-current {
+	font-weight: 600;
+	color: #fbfbfb;
+	background: rgba(251, 251, 251, 0.1);
+	border-radius: 8px;
+	padding: 4px 12px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.sale-description-price-current {
+		font-size: 20px;
+		line-height: 1;
+	}
+}
+
+.sale-description-price-initial {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16667;
+	text-decoration: line-through;
+	color: rgba(251, 251, 251, 0.5);
+}
+
+.sale-description-text {
+	font-size: 14px;
+	line-height: 1.28571;
+	color: rgba(251, 251, 251, 0.7);
+	margin-bottom: 28px;
+}
+
+@media (min-width: 768px) {
+	.sale-description-text {
+		font-size: 16px;
+		line-height: 1.25;
+		margin-bottom: 40px;
+	}
+}
+
+.sale-description-tags {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.sale-description-tag {
+	font-size: 12px;
+	line-height: 1.33333;
+	color: #fbfbfb;
+	border: 1px solid rgba(251, 251, 251, 0.2);
+	border-radius: 8px;
+	padding: 4px 12px;
+	letter-spacing: normal;
+	height: 32px;
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.sale-description-tag {
+		font-size: 14px;
+		line-height: 1.28571;
+		height: 34px;
+	}
+}
+
+/* #endregion */
