@@ -13,12 +13,12 @@
 }
 
 :root {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: #FBFBFB;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+        color: #0C0C0C;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
