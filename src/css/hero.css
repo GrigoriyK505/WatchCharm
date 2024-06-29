@@ -1,17 +1,19 @@
 .hero {
     font-family: "Gilroy", sans-serif;
-    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 
 .container {
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 375px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
-
 .section-txt {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,7 +22,6 @@
 .hero-txt {
     margin-bottom: 28px;
     max-width: 335px;
-    ;
 }
 
 
@@ -117,10 +118,12 @@
 
 
 .div-watch {
-    border-radius: 30px;
-    max-width: 335px;
-    height: 366px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 28px;
+    border-radius: 30px;
+    width: 335px;
+    height: 366px;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(12, 12, 12, 0.2), rgba(0, 0, 0, 0)), url("../img/Hero/mob-WatchHero-2x.jpg");
@@ -132,9 +135,12 @@
         max-width: 768px;
         padding: 0 32px;
     }
-
+    .section-txt {
+        justify-content: space-between;
+    }
     .hero-txt {
         max-width: 557px;
+        margin: 0;
     }
 
     .title {
@@ -172,23 +178,18 @@
     }
     .div-watch {
         border-radius: 50px;
-        max-width: 704px;
+        width: 704px;
         height: 520px;
         background-image: linear-gradient(rgba(12, 12, 12, 0.2), rgba(0, 0, 0, 0)), url("../img/Hero/tab-WatchHero-2x.jpg");
     }
 }
 
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
     .container {
-        max-width: 1158px;
+        max-width: 1280px;
         padding: 0 65px;
     }
-
-    .section-txt {
-        justify-content: space-between;
-    }
-
     .hero-txt {
         max-width: 597px;
     }
@@ -209,8 +210,8 @@
         height: 60px;
     }
     .div-watch {
+        width: 1150px;
         height: 500px;
-        max-width: 1150px;
         background-image: linear-gradient(rgba(12, 12, 12, 0.2), rgba(0, 0, 0, 0)), url("../img/Hero/WatchHero-1x.jpg");
     }
 }
