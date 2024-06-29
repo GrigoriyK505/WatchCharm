@@ -1,1 +1,84 @@
-<section class="header">Header</section>
+<header class="header">
+    <div class="header-cont"> 
+        <nav class="navigation">
+        <a href="index.html" class="header-logo">watchcharm</a> 
+        <ul class="nav-list">
+            <li class="nav-list-item"> <a href="index.html" class="nav-link nav-home"> Home </a></li>
+            <li class="nav-list-item"> <a href="#aboutus" class="nav-link"> About Us </a></li>
+            <li class="nav-list-item"> <a href="#catalog" class="nav-link"> Catalog </a></li>
+            <li class="nav-list-item"> <a href="#sale" class="nav-link"> Sale </a></li>
+            <li class="nav-list-item"> <a href="#reviews" class="nav-link"> Reviews </a></li>
+            <li class="nav-list-item"> <a href="#contactus" class="nav-link"> Contact Us </a></li>
+        </ul>
+    </nav>
+    <ul class="sm-list-header">
+        <li class="sm-list-item"> 
+            <a href="https://www.facebook.com/goITclub/" class="sm-link-header" target="_blank" rel="noopener norefferer">
+                <svg class="sm-icon-header" width="20" height="20"> <use href="/img/icons.svg#icon-facebook"> </use></svg>
+            </a>
+        </li>
+        <li class="sm-list-item"> 
+            <a href="https://www.instagram.com/goitclub/" class="sm-link-header" target="_blank" rel="noopener norefferer">
+                <svg class="sm-icon-header" width="20" height="20"> <use href="/img/icons.svg#icon-instagram"> </use></svg>
+            </a>
+        </li>
+        <li class="sm-list-item"> 
+            <a href="https://www.youtube.com/c/GoIT" class="sm-link-header" target="_blank" rel="noopener norefferer">
+                <svg class="sm-icon-header" width="20" height="20"> <use href="/img/icons.svg#icon-youtube"> </use></svg>
+            </a>
+        </li>
+    </ul>
+        <button class="menu-btn" type="button"> 
+            <svg class="menu-btn-icon" > <use href="/img/icons.svg#icon-open"></use> </svg>
+        </button>
+        </div>
+</header>
+<div class="menu">
+<button type="button" class="menu-close-btn">
+<svg class="menu-close-btn-icon" width="34" height="34"> <use href="/img/icons.svg#icon-close"></use></svg>
+</button>
+
+<ul class="menu-nav-list">
+    <li class="menu-nav-list-item"> <a href="index.html" class="menu-nav-link menu-nav-home"> Home </a></li>
+    <li class="menu-nav-list-item"> <a href="#aboutus" class="menu-nav-link"> About Us </a></li>
+    <li class="menu-nav-list-item"> <a href="#catalog" class="menu-nav-link"> Catalog </a></li>
+    <li class="menu-nav-list-item"> <a href="#sale" class="menu-nav-link"> Sale </a></li>
+    <li class="menu-nav-list-item"> <a href="#reviews" class="menu-nav-link"> Reviews </a></li>
+    <li class="menu-nav-list-item"> <a href="#contactus" class="menu-nav-link"> Contact Us </a></li>
+</ul>
+<ul class="menu-sm-list">
+    <li class="menu-sm-list-item"> 
+        <a href="https://www.facebook.com/goITclub/" class="menu-sm-link" target="_blank" rel="noopener norefferer">
+            <svg class="menu-sm-icon" width="18" height="18"> <use href="/img/icons.svg#icon-facebook"> </use></svg>
+        </a>
+    </li>
+    <li class="menu-sm-list-item"> 
+        <a href="https://www.instagram.com/goitclub/" class="menu-sm-link" target="_blank" rel="noopener norefferer">
+            <svg class="menu-sm-icon" width="18" height="18"> <use href="/img/icons.svg#icon-instagram"> </use></svg>
+        </a>
+    </li>
+    <li class="menu-sm-list-item"> 
+        <a href="https://www.youtube.com/c/GoIT" class="menu-sm-link" target="_blank" rel="noopener norefferer">
+            <svg class="menu-sm-icon" width="18" height="18"> <use href="/img/icons.svg#icon-youtube"> </use></svg>
+        </a>
+    </li>
+</ul>
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        const menuCloseBtn = document.querySelector('.menu-close-btn');
+
+       
+        menuBtn.addEventListener('click', function() {
+            menu.style.display = 'block';
+        });
+
+       
+        menuCloseBtn.addEventListener('click', function() {
+            menu.style.display = 'none';
+        });
+    });
+</script>
