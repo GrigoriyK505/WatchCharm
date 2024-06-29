@@ -55,6 +55,15 @@
     justify-content: space-between;
 }
 
+.section-icons {
+    width: 100%;
+}
+
+.hero-link {
+    margin-left: auto;
+    /* Додає автоматичний відступ зліва, щоб посилання перемістилося до правого краю */
+}
+
 
 .icons {
     display: flex;
@@ -151,6 +160,8 @@
     .section-icons {
         flex-direction: column;
         align-items: end;
+        width: auto;
+        padding-left: 11px;
     }
 
     .div-watch {
