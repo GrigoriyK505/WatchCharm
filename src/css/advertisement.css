@@ -1,9 +1,10 @@
 .advertisement .container {
   box-sizing: border-box;
-  /* width: 320px; */
+  width: 335px;
   max-width: 100vh;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -59,7 +60,7 @@
 
 @media screen and (min-width: 768px) {
   .advertisement .container {
-    /* width: 768px; */
+    width: 704px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -76,9 +77,9 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .advertisement .container {
-    /* width: 1158px; */
+    width: 1216px;
 
     padding-left: 65px;
     padding-right: 65px;
