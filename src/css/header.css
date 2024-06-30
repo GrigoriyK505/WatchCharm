@@ -113,7 +113,7 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url(/img/modal/mob-modal-1x.jpg);
+    background-image: url('/img/modal/mob-modal-1x.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -123,7 +123,7 @@ display: none;
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .menu {
-        background-image: url(/img/modal/mob-modal-2x.jpg);
+        background-image: url('/img/modal/mob-modal-2x.jpg');
     }
 }
 .menu-close-btn {
@@ -233,7 +233,7 @@ max-width: 768px;
   }
   .menu {
     width: 330px;
-    background-image: url(/img/modal/tab-modal-1x.jpg);
+    background-image: url('/img/modal/tab-modal-1x.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;  
@@ -241,7 +241,7 @@ max-width: 768px;
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .menu {
-        background-image: url(/img/modal/tab-modal-2x.jpg);
+        background-image: url('/img/modal/tab-modal-2x.jpg');
     }
 }
 .menu-close-btn {
