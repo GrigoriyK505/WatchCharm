@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .main {
     display: flex;
     align-items: center;
@@ -15,15 +19,15 @@
     gap: 60px;
 }
 
-@media (min-width: 768px) {
-    main {
+@media screen and (min-width: 768px) {
+    .main {
         gap: 80px;
     }
 }
 
-@media (min-width: 1280px) {
-    main {
-        gap: 1000px;
+@media screen and (min-width: 1280px) {
+    .main {
+        gap: 100px;
     }
 }
 
