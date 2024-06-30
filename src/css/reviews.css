@@ -1,5 +1,7 @@
 .reviews .container {
-  width: 335px;
+  width: 100%;
+  max-width: 335px;
+  min-width: 320px;
   box-sizing: border-box;
   background-color: #fbfbfb;
   padding-top: 30px;
@@ -48,8 +50,9 @@
 }
 @media screen and (min-width: 768px) {
   .reviews .container {
-    width: 704px;
-    padding: 40 32px;
+    width: 100%;
+    max-width: 704px;
+    padding: 40px 32px;
   }
   .reviews-title {
     font-size: 48px;
@@ -78,7 +81,8 @@
 }
 @media screen and (min-width: 1280px) {
   .reviews .container {
-    width: 1216px;
+    width: 100%;
+    max-width: 1216px;
     padding: 50px 65px;
   }
   .reviews-list {

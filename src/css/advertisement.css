@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 1280px) {
   .advertisement .container {
-    width: 1216px;
+    width: 1150px;
 
     padding-left: 65px;
     padding-right: 65px;
@@ -91,9 +91,11 @@
     margin-top: 83px;
     margin-bottom: 83px;
     margin-left: 60px;
+    margin-right: 140;
     /* margin: 83px 140px 83px 80px; */
   }
   .advertisement-button {
     margin-top: 80px;
+    margin-left: 0;
   }
 }
