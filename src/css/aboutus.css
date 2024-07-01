@@ -47,3 +47,53 @@
   padding: 15px 37px 15px 38px;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.aboutus-btn:hover,
+.aboutus-btn:focus {
+  background-color: #1f3cd4;
+}
+@media only screen and (min-width: 768px) {
+  .aboutus-section {
+    padding: 40px 0;
+  }
+  .aboutus-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .aboutus-wrapper {
+    padding: 80px 60px;
+    border-radius: 50px;
+    max-width: 704px;
+    margin-bottom: 40px;
+  }
+  .title-aboutus {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+  .aboutus-list {
+    margin-bottom: 60px;
+  }
+  .aboutus-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .aboutus-section {
+    padding: 50px 0;
+  }
+  .aboutus-container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 65px;
+  }
+  .aboutus-wrapper {
+    max-width: 580px;
+    max-height: 532px;
+    margin-bottom: 0;
+  }
+  .aboutus-list {
+    margin-bottom: 40px;
+  }
+}
