@@ -1,6 +1,6 @@
 .aboutus-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
   background-color: #fbfbfb;
 }
 .aboutus-container {
@@ -52,9 +52,9 @@
   background-color: #1f3cd4;
 }
 @media only screen and (min-width: 768px) {
-  .aboutus-section {
+  /* .aboutus-section {
     padding: 40px 0;
-  }
+  } */
   .aboutus-container {
     max-width: 768px;
     padding: 0 32px;
@@ -79,9 +79,9 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .aboutus-section {
+  /* .aboutus-section {
     padding: 50px 0;
-  }
+  } */
   .aboutus-container {
     max-width: 1280px;
     display: flex;
@@ -92,6 +92,7 @@
     max-width: 580px;
     max-height: 532px;
     margin-bottom: 0;
+    margin-right: 40px;
   }
   .aboutus-list {
     margin-bottom: 40px;
