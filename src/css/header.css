@@ -7,14 +7,16 @@ body {
     border-bottom: 1px solid #e7e9fc;
 max-width: 375px;
 padding: 0;
+padding-top: 20px;
+    padding-bottom: 20px;
 /* margin-bottom: 80px; */
 
 }
 .header-cont {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
     min-width: 335px;
     max-width: 375px;
     display: flex;
@@ -215,12 +217,14 @@ height: 34px;
 @media screen and (min-width: 768px) {
     .header {
         padding-top: 26px;
-        /* padding-bottom: 26px; */
+        padding-bottom: 26px;
 max-width: 768px;
     }
     .header-cont {
         padding-left: 32px;
         padding-right: 32px;
+        padding-top: 0;
+        padding-bottom: 0;
         min-width: 768px;
         max-width: 768px;
         display: flex;
@@ -284,6 +288,8 @@ max-width: 768px;
     .header-cont {
         padding-left: 64.5px;
         padding-right: 64.5px;
+        padding-top: 0;
+        padding-bottom: 0;
         min-width: 1280px;
         max-width: 1280px;
         display: flex;
