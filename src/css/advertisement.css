@@ -1,6 +1,10 @@
+.advertisement {
+  width: 100%;
+}
+
 .advertisement .container {
   box-sizing: border-box;
-  width: 335px;
+  width: 100%;
   max-width: 100vh;
   padding-left: 20px;
   padding-right: 20px;
