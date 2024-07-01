@@ -3,7 +3,7 @@
         <nav class="navigation">
         <a href="index.html" class="header-logo">watchcharm</a> 
         <ul class="nav-list">
-            <li class="nav-list-item"> <a href="index.html" class="nav-link nav-home"> Home </a></li>
+            <li class="nav-list-item"> <a href="index.html" class="nav-link nav-active"> Home </a></li>
             <li class="nav-list-item"> <a href="#aboutus" class="nav-link"> About Us </a></li>
             <li class="nav-list-item"> <a href="#catalog" class="nav-link"> Catalog </a></li>
             <li class="nav-list-item"> <a href="#sale" class="nav-link"> Sale </a></li>
@@ -39,7 +39,7 @@
 </button>
 
 <ul class="menu-nav-list">
-    <li class="menu-nav-list-item"> <a href="index.html" class="menu-nav-link menu-nav-home"> Home </a></li>
+    <li class="menu-nav-list-item"> <a href="index.html" class="menu-nav-link nav-active"> Home </a></li>
     <li class="menu-nav-list-item"> <a href="#aboutus" class="menu-nav-link"> About Us </a></li>
     <li class="menu-nav-list-item"> <a href="#catalog" class="menu-nav-link"> Catalog </a></li>
     <li class="menu-nav-list-item"> <a href="#sale" class="menu-nav-link"> Sale </a></li>
@@ -67,18 +67,57 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector('.menu');
-        const menuCloseBtn = document.querySelector('.menu-close-btn');
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    const menuCloseBtn = document.querySelector('.menu-close-btn');
 
-       
-        menuBtn.addEventListener('click', function() {
-            menu.style.display = 'block';
-        });
-
-       
-        menuCloseBtn.addEventListener('click', function() {
-            menu.style.display = 'none';
-        });
+    
+    menuBtn.addEventListener('click', function() {
+        menu.style.display = 'block';
     });
+
+    menuCloseBtn.addEventListener('click', function() {
+        menu.style.display = 'none';
+    });
+    window.addEventListener('click', e => { 
+    const target = e.target 
+    if (!target.closest('.menu') && !target.closest('.menu-btn')) { 
+        menu.style.display = 'none';
+    }
+  })
+
+});
+</script>
+<script>
+  (() => {
+    const navLinks = document.querySelectorAll('.nav-link, .menu-nav-link');
+    navLinks.forEach(link => link.addEventListener('click', changeActive));
+
+    function changeActive(e) {
+        document.querySelectorAll('.nav-active').forEach(el => el.classList.remove('nav-active'));
+        const href = e.target.getAttribute('href');
+        if (href) {
+            document.querySelectorAll(`.nav-link[href="${href}"], .menu-nav-link[href="${href}"]`)
+                .forEach(el => el.classList.add('nav-active'));
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        let currentSection = null;
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                currentSection = section.id;
+            }
+        });
+
+        if (currentSection) {
+            document.querySelectorAll('.nav-active').forEach(el => el.classList.remove('nav-active'));
+            document.querySelectorAll(`.nav-link[href="#${currentSection}"], .menu-nav-link[href="#${currentSection}"]`)
+                .forEach(el => el.classList.add('nav-active'));
+        }
+    });
+})();
 </script>
