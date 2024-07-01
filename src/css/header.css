@@ -119,7 +119,7 @@ display: none;
 
     background-image: url(/img/Modal/mob-modal-1x.jpg);
 
-    background-image: url('/img/modal/mob-modal-1x.jpg');
+    /* background-image: url('/img/modal/mob-modal-1x.jpg'); */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -132,7 +132,7 @@ display: none;
 
         background-image: url(/img/Modal/mob-modal-2x.jpg);
 
-        background-image: url('/img/modal/mob-modal-2x.jpg');
+        /* background-image: url('/img/modal/mob-modal-2x.jpg'); */
 
     }
 }
@@ -216,8 +216,8 @@ height: 34px;
 }
 @media screen and (min-width: 768px) {
     .header {
-        padding-top: 26px;
-        padding-bottom: 26px;
+        /* padding-top: 26px; */
+        /* padding-bottom: 26px; */
 max-width: 768px;
     }
     .header-cont {
@@ -251,7 +251,7 @@ max-width: 768px;
 
     background-image: url(/img/Modal/tab-modal-1x.jpg);
 
-    background-image: url('/img/modal/tab-modal-1x.jpg');
+    /* background-image: url('/img/modal/tab-modal-1x.jpg'); */
 
     background-size: cover; 
     background-position: center; 
@@ -262,7 +262,7 @@ max-width: 768px;
     .menu {
 
         background-image: url(/img/Modal/tab-modal-2x.jpg);
-        background-image: url('/img/modal/tab-modal-2x.jpg');
+        /* background-image: url('/img/modal/tab-modal-2x.jpg'); */
     }
 }
 .menu-close-btn {
