@@ -58,19 +58,20 @@ font-weight: 500;
 line-height: 18px;
 text-align: center;
 color: #0C0C0C;
+position: relative;
 }
-.nav-home {
+
+.nav-link.nav-active::after {
     position: relative;
-}
-.nav-home::after {
-    content: "";
     width: 8px;
     height: 8px;
-    position: absolute;
-    bottom: -10px;
-    left: 15px;
+    left: 50%;
+    display: block;
+    content: '';
     background-color: #3350E9;
     border-radius: 50%;
+    margin-top: 2px;
+    transform: translateX(-50%);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -113,7 +114,10 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: url('/img/modal/mob-modal-1x.jpg');
+
+    background-image: url(/img/Modal/mob-modal-1x.jpg);
+
+    /* background-image: url('/img/modal/mob-modal-1x.jpg'); */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -123,7 +127,11 @@ display: none;
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .menu {
-        background-image: url('/img/modal/mob-modal-2x.jpg');
+
+        background-image: url(/img/Modal/mob-modal-2x.jpg);
+
+        /* background-image: url('/img/modal/mob-modal-2x.jpg'); */
+
     }
 }
 .menu-close-btn {
@@ -156,21 +164,24 @@ font-size: 14px;
 line-height: 129%;
 text-align: center;
 color: #fbfbfb;
-}
-.menu-nav-home {
 position: relative;
 }
-.menu-nav-home::after {
-    content: "";
+
+
+.menu-nav-link.nav-active::after {
+    position: relative;
     width: 8px;
     height: 8px;
-    position: absolute;
-    bottom: -10px;
-    left: 15px;
+    left: 50%;
+    display: block;
+    content: '';
     background-color: #3350E9;
     border-radius: 50%;
+    margin-top: 2px;
+    transform: translateX(-50%);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .menu-sm-list {
     display: flex;
     flex-direction: row;
@@ -203,7 +214,7 @@ height: 34px;
 }
 @media screen and (min-width: 768px) {
     .header {
-        padding-top: 26px;
+        /* padding-top: 26px; */
         /* padding-bottom: 26px; */
 max-width: 768px;
     }
@@ -233,7 +244,11 @@ max-width: 768px;
   }
   .menu {
     width: 330px;
-    background-image: url('/img/modal/tab-modal-1x.jpg');
+
+    background-image: url(/img/Modal/tab-modal-1x.jpg);
+
+    /* background-image: url('/img/modal/tab-modal-1x.jpg'); */
+
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;  
@@ -241,7 +256,9 @@ max-width: 768px;
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .menu {
-        background-image: url('/img/modal/tab-modal-2x.jpg');
+
+        background-image: url(/img/Modal/tab-modal-2x.jpg);
+        /* background-image: url('/img/modal/tab-modal-2x.jpg'); */
     }
 }
 .menu-close-btn {
