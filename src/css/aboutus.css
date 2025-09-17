@@ -30,16 +30,19 @@
   margin-bottom: 20px;
 }
 .aboutus-text {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.28571;
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
 }
 .aboutus-btn {
   display: inline-block;
+  width: 160px;
+  height: 48px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 1.28571;
   text-align: center;
   color: #fbfbfb;
   border-radius: 16px;
@@ -67,7 +70,7 @@
   }
   .title-aboutus {
     font-size: 48px;
-    line-height: 0.92;
+    line-height: 0.91667;
     margin-bottom: 40px;
   }
   .aboutus-list {

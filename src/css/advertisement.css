@@ -1,8 +1,6 @@
 
 .advertisment {
   background-color: #fbfbfb;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .advertisment-container {
@@ -25,9 +23,10 @@
   color: #fbfbfb;
   font-size: 32px;
   font-weight: 600;
-  line-height: 32px;
-  letter-spacing: -0.64px;
+  line-height: 1;
+  letter-spacing: -0.02em;
   margin-bottom: 28px;
+  height: 167px;
 }
 
 .advertisment-story {
@@ -63,11 +62,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .advertisment {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .advertisment-container {
     max-width: 768px;
     padding: 0 32px;
@@ -79,18 +73,14 @@
 
   .advertisment-text {
     font-size: 48px;
-    line-height: 44px;
-    letter-spacing: -0.96px;
+    line-height: 0.91667;
+    letter-spacing: -0.02em;
     margin-bottom: 32px;
+    height: 185px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .advertisment {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
   .advertisment-container {
     max-width: 1280px;
     padding: 0 65px;
@@ -99,11 +89,13 @@
   .advertisment-block {
     display: flex;
     justify-content: space-between;
-    padding: 80px 180px;
+    padding: 83px 80px;
   }
 
   .advertisment-text {
     max-width: 690px;
+    margin-right: 140px;
     margin-bottom: 0;
+    height: 132px;
   }
 }

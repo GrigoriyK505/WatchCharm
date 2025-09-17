@@ -1,7 +1,5 @@
 
 .container-footer {
-
-  max-width: 375px;
   width: 100%;
   margin: 0 auto;
 }
@@ -13,7 +11,7 @@
   color: #FBFBFB;
   border-radius: 30px;
   padding: 40px 28px 28px 28px;
-
+  margin-bottom: 20px;
 }
 
 .footer-top-positioning {
@@ -30,14 +28,15 @@
   margin-bottom: 20px;
 }
 
-
+.footer-logo-social {
+  margin-bottom: 20px;
+}
 
 .footer-social-list {
   display: flex;
   justify-content: start;
   gap: 10px;
-  width: 122px;
-  margin-bottom: 20px;
+  width: 128px;
 }
 
 .footer-social-link {
@@ -131,6 +130,9 @@
   column-gap: 16px;
   row-gap: 8px;
 }
+.footer-sitenav-item {
+  height: 16px;
+}
 
 .footer-sitenav-link {
   font-weight: 500;
@@ -148,6 +150,7 @@
 
 .footer-maps-box {
   width: 83px;
+  height: 48px;
   margin-left: auto;
 
 }
@@ -202,17 +205,22 @@
 
 @media screen and (min-width: 768px) {
 
-  .container-footer {
-    padding: 40px 40px 40px 28px;
+  .footer {
+    padding: 40px 40px 28px 40px;
     position: relative;
-    max-width: 768px;
+    width: 704px;
+    height: 540px;
   }
 
   .footer-top-positioning {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 240px;
+    margin-bottom: 86px;
+  }
+
+  .footer-logo-social {
+    margin-bottom: 0;
   }
 
   .footer-logo {
@@ -244,18 +252,23 @@
     top: 206px;
     left: 90px;
 
-    min-width: 524px;
     width: 100%;
+    min-width: 524px;
+    height: 96px;
 
-    font-weight: 600;
     font-size: 28px;
     line-height: 1.14;
-    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 100px;
   }
 
   .footer-navlist-address {
     padding-bottom: 28px;
     margin-bottom: 28px;
+    bottom: 44px;
+    position: absolute;
+    width: 624px;
+    height: 64px;
   }
 
   .footer-sitenav-list {
@@ -277,7 +290,8 @@
     display: flex;
     flex-direction: row;
     width: 624px;
-    align-items: baseline;
+    position: absolute;
+    bottom: 28px;
   }
 
   .footer-policy-text {
@@ -297,18 +311,12 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279.99px) {
-  .footer {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
 @media screen and (min-width: 1280px) {
-  .container-footer {
-    max-width: 1216px;
-    padding: 0;
-    position: unset;
+  .footer {
+    padding: 40px 40px 28px 40px;
+    position: relative;
+    width: 1216px;
+    height: 400px;
   }
 
   .footer-top-positioning {
@@ -328,6 +336,10 @@
   position: unset;
     min-width: 523px;
     margin-right: 147px;
+  }
+
+  .footer-navlist-address {
+    width: 1136px;
   }
   
   .footer-policy-box {
