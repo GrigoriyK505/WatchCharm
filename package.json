@@ -20,26 +20,3 @@
     "vite-plugin-html-inject": "^1.0.1"
   }
 }
-
-{
-  "name": "goit-markup-hw-06",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GrigoriyK505/goit-markup-hw-06.git"
-  },
-  "keywords": [],
-  "author": "grigoriy",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/GrigoriyK505/goit-markup-hw-06/issues"
-  },
-  "homepage": "https://github.com/GrigoriyK505/goit-markup-hw-06#readme"
-}
-
