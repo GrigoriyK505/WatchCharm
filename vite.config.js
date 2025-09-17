@@ -5,13 +5,11 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig(({ command }) => {
   return {
-    define: {
-      [command === 'serve' ? 'global' : '_global']: {},
-    },
+    base: '/WatchCharm/', // важливо для GitHub Pages
     root: 'src',
     build: {
       sourcemap: true,
-
+      outDir: '../dist',
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -20,11 +18,13 @@ export default defineConfig(({ command }) => {
               return 'vendor';
             }
           },
-          entryFileNames: 'commonHelpers.js',
+          entryFileNames: 'assets/[name].[hash].js', // стандартний варіант
         },
       },
-      outDir: '../dist',
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    define: {
+      global: {}, // без умовного хаку
+    },
   };
 });
