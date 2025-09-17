@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build --base=/Project-group-16/",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
   },
   "author": "Bohdan Kyrychenko <bogdan34110@gmail.com>",
   "license": "ISC",
