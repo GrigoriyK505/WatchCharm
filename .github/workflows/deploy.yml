@@ -36,3 +36,9 @@ jobs:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check dist folder exists
+        run: |
+              ls -la
+              ls -la dist
+
