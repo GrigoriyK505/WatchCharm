@@ -21,7 +21,7 @@ export default defineConfig(({ command }) => {
               return 'vendor';
             }
           },
-          entryFileNames: 'commonHelpers.js',
+          // entryFileNames: 'commonHelpers.js',
         },
       },
       outDir: '../dist',
