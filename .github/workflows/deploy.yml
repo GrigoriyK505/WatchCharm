@@ -8,21 +8,25 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Получаем весь репозиторий
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
+      # Настраиваем Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
+      # Устанавливаем зависимости и билдим проект
       - name: Install and build 🔧
         run: |
           npm install
           npm run build
 
+      # Деплой на gh-pages
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
