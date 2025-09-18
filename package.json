@@ -11,11 +11,15 @@
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.11.0",
     "glob": "^8.1.0",
+    "imagemin-pngquant": "^5.0.1",
     "vite": "^6.3.6"
   },
   "author": "Bohdan Kyrychenko <bogdan34110@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "imagemin": "^9.0.1",
+    "imagemin-mozjpeg": "^7.0.0",
+    "rimraf": "^6.0.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
