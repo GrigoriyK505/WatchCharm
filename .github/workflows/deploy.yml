@@ -1,42 +1,23 @@
-name: Deploy to GitHub Pages
+name: Build and deploy to GitHub Pages
 
-# Запускать деплой при каждом пуше в main
 on:
   push:
-    branches:
-      - main
-
-# Нужно для записи в gh-pages
-permissions:
-  contents: write
+    branches: [main]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # Клонируем репозиторий
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
 
-      # Устанавливаем Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Install and build 🔧
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
-          node-version: 18
-          cache: npm
-
-      # Устанавливаем зависимости
-      - name: Install dependencies
-        run: npm install
-
-      # Строим проект
-      - name: Build
-        run: npm run build
-
-      # Деплоим на gh-pages
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          branch: gh-pages
+          folder: dist
