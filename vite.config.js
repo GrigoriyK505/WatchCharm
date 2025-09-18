@@ -5,6 +5,7 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/WatchCharm/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
